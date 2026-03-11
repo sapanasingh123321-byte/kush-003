@@ -1,0 +1,444 @@
+<html>
+  <head><title>official krish</title>
+  
+
+  <style>
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  margin: 0px;
+    background: url('ramsiya.jpg') ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+   .homepage{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     background-color:transparent;
+     
+   }
+   .logobox{
+     display: flex;
+     margin: 10px;
+     padding: 15px;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     right: 20px;
+     height: 10vh;
+     width: 20vw;
+     background-color: transparent;
+     backdrop-filter: blur(10px);
+     border-radius: 180px;
+     border: solid black;
+     font-size: 1.3em;
+   }
+   .logo{
+     left: 15px;
+     position: relative;
+     display:block;
+     height: 95%;
+     width:100px;
+     border-radius: 360px;
+   }
+      .aboutpage{
+     display: none;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     background-color:transparent;
+   }
+   .profile{
+     display: flex;
+     position: fixed;
+     flex-direction: column;
+     top: 15px;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 30px;
+     background-color:transparent;
+     backdrop-filter: blur(30px);
+     height: 40vh;
+     width: 45vw;
+     border: solid black;
+     
+   }
+   .ksname{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: 20%;
+     background-color: transparent;
+     backdrop-filter: blur(20px);
+     border-bottom: solid black;
+     color: white;
+   }
+   .profile_card{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height:70%;
+     width: 100%;
+     backdrop-filter: blur(60px);
+   }
+   .ending{
+     height: 10%;
+     width: 100%;
+     background-color: #f6ddc94e;
+     backdrop-filter: blur(70px);
+     border-top: solid black;
+   }
+   .pp{
+     position: relative;
+     left: 10px;
+     border-radius: 30px;
+     height: 100%;
+     width: 35%;
+     border: solid black;
+   }
+   .aboutpp{
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+     width: 65%;
+     height: 100%;
+     font-size: 2em;
+     color: white;
+   }
+   .followbox{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+      position: fixed;
+      bottom: -20px;
+     height: 600px;
+     width: 900px;
+     background-color: transparent;
+     backdrop-filter: blur(30px);
+     border-radius:40px;
+     box-shadow: 4px 4px 10px,-4px -4px 10px;
+   }
+   .followiconbox{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 10px;
+     height: 140px;
+     border-radius: 100px;
+     width: 90%;
+     position: relative;
+     top: 30px;
+       background: linear-gradient(to right ,#fa9032bd,#f4cf64bd);
+          box-shadow: 2px 2px 10px,-2px -2px 10px;
+   }
+   .followicons{
+     position: relative;
+     justify-self: flex-start;
+     width: 130px;
+     width: 130px;
+     border: solid black;
+     border-radius: 180px;
+     margin: 20px;
+   }
+   .followbtn{
+     text-decoration: none;
+     border: solid black;
+     color: white;
+     border-radius: 100px;
+     font-size: 2em;
+     margin:10px;
+     height: 130px;
+     width: 130px;
+     background-color: black;
+   }
+   .followbtn:hover{
+     box-shadow: 2px 2px 10px,-2px -2px 10px;
+     color: gray;
+   }
+      .feedbackpage{
+     display: none;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     background-color:transparent;
+   }
+   .feedbackmail{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-size: 3em;
+     position: fixed;
+     bottom: -30px;
+     height: 1100px;
+     width: 900px;
+     background-color:transparent;
+     backdrop-filter: blur(30px);
+     box-shadow: 4px 4px 10px,-4px -4px 10px;
+    border-radius: 40px;
+   }
+   .feedbackbox{
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     gap:5px;
+     position:relative;
+     top: 20px;
+     height: 70%;
+     width: 90%;
+     background: linear-gradient(to top right ,#fa9032bd,#f4cf64bd);
+         box-shadow: 4px 4px 10px,-4px -4px 10px;
+    border-radius: 40px;
+   }
+   input{
+     width: 80%;
+     height: 60px;
+     margin: 20px;
+     padding: 20px;
+     text-decoration: none;
+     font-size:30px;
+     border-radius: 30px;
+     border: solid black;
+   }
+  
+  .send{
+    height: 70px;
+    position:relative;
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    border: solid black;
+    box-shadow: 2px 2px 15px,-2px -2px 15px;
+    font-size:30px;
+  }
+
+.navbar{
+  position:fixed;
+  bottom: 20px;
+  width:700px;
+  height: 200px;
+  background-color: transparent;
+  border: solid #e45908;
+  border-radius: 30px;
+  box-shadow: 4px 4px 10px ,-4px -4px 10px;
+    backdrop-filter: blur(20px);
+}
+.email{
+  display: none;
+}
+
+audio{
+  position: fixed;
+  top: -60px;
+}
+.navbar_tools{
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+svg{
+  display:;
+  top: 25px;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border: solid #e45908;
+  border-radius: 180px;
+  background: linear-gradient(to right ,#fa9032bd,#f4cf64bd);
+  box-shadow: 2px 2px 10px;
+  cursor: pointer;
+}
+svg:hover{
+    box-shadow: 5px 5px 35px;
+}
+.home{
+  color: white;
+}
+@media (max-width:1000px){
+  body{
+    background: url('ramsiya.jpg') ;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .navbar{
+bottom: 30px;
+width: 90%;
+  }
+   .feedbackmail{
+     width:95% ;
+   }
+   .followbox{
+     width: 95%;
+   }
+   .logobox{
+     display: none;
+
+   }
+   .profile{
+     width: 100vw;
+     max-height: 50vh;
+   }
+   .pp{
+     width: 50vw;
+   }
+   }
+  </style>
+  </head>
+  <body>
+    
+    <!----homepage----->
+<div class="homepage" id="homepage">
+
+<h1>homepage</h1>
+<div class="logobox">
+  <img src="kslogo.jpg" class="logo"><h1>Kush Singh</h1>
+
+</div>
+</div>
+<!----aboutpage---->
+<div class="aboutpage" id="aboutpage">
+<h1>aboutpage</h1>
+<div class="profile">
+  <div class="ksname"><h1>Krish Singh</h1></div>
+  <div class="profile_card">
+    <img src="krish5.jpg" class="pp">
+    <div class="aboutpp">
+      NAME : KUSH SINGH<br>
+      CLASS : EIGHT<br>
+      ROLL.NO.: THREE
+    </div>
+  </div>
+  <div class="ending"></div>
+</div>
+<div class="followbox">
+  <div class="followiconbox">
+    <img src="tiktok.jpg" class="followicons">
+    <h1>follow on: tiktok</h1>
+ <a href="https://www.tiktok.com/@krish.mahato.003?_r=1&_t=ZS-94WzNOp5UDk" ><button class="followbtn">follow</button></a>
+  </div>
+   <div class="followiconbox">
+    <img src="facebook.png" class="followicons">
+    <h1>follow on: facebook</h1>
+<a href="https://www.facebook.com/share/1ATDCTn4HQ/"><button class="followbtn">follow</button></a>
+  </div>
+</div>
+</div>
+<!-----feedback page------>
+<div class="feedbackpage" id="feedbackpage">
+<h1>feedbackpage</h1>
+<div class="feedbackmail">
+      <form
+  action="https://formspree.io/f/xdawaqjj"
+   method="POST" class="feedbackbox">
+   <h1>feedback</h1>
+    <input type="email" name="email" class="email" value="ug12191219@gmail.com">
+     <input type="text" name="name" class="name" placeholder="enter your name">
+       <input type="textarea" name="message" class="msg" placeholder="enter your message here">
+<button type="submit" class="send">send</button>
+
+  <!-- your other form fields go here -->
+
+</form>
+
+
+</div>
+</div>   
+
+  <div class="navbar">
+
+    <div class="navbar_tools">
+  
+      <!----home icon--->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="home" id="homebtn" onclick="homeon()">
+  <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+  <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+
+</svg>
+
+      
+      <!----about icon----->
+    
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="about" id="aboutbtn" onclick="abouton()">
+  <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+</svg>
+
+      
+      <!-----feedback icon----->
+    
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" id="feedbackbtn" class="feedback" onclick="feedbackon()">
+  <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0 1 12 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 0 1-3.476.383.39.39 0 0 0-.297.17l-2.755 4.133a.75.75 0 0 1-1.248 0l-2.755-4.133a.39.39 0 0 0-.297-.17 48.9 48.9 0 0 1-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97ZM6.75 8.25a.75.75 0 0 1 .75-.75h9a.75.75 0 0 1 0 1.5h-9a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5H12a.75.75 0 0 0 0-1.5H7.5Z" clip-rule="evenodd" />
+</svg>
+
+    
+    </div>
+  </div>
+  <script>
+    function homeon(){
+      const homepage= document.getElementById("homepage");
+      const aboutpage= document.getElementById("aboutpage");
+      const feedbackpage= document.getElementById("feedbackpage");
+      const homebtn= document.getElementById("homebtn");
+   const aboutbtn= document.getElementById("aboutbtn");
+    const feedbackbtn= document.getElementById("feedbackbtn");
+      
+      homebtn.style.color="white";
+      aboutbtn.style.color="black";
+      feedbackbtn.style.color="black";
+      
+      homepage.style.display="flex";
+      aboutpage.style.display="none";
+      feedbackpage.style.display="none";
+    }
+
+        function abouton(){
+      const homepage= document.getElementById("homepage");
+      const aboutpage= document.getElementById("aboutpage");
+      const feedbackpage= document.getElementById("feedbackpage");
+     const homebtn= document.getElementById("homebtn");
+   const aboutbtn= document.getElementById("aboutbtn");
+    const feedbackbtn= document.getElementById("feedbackbtn");
+      
+      homebtn.style.color="black";
+      aboutbtn.style.color="white";
+      feedbackbtn.style.color="black";
+      
+      homepage.style.display="none";
+      aboutpage.style.display="flex";
+      feedbackpage.style.display="none";
+    }
+        function feedbackon(){
+      const homepage= document.getElementById("homepage");
+      const aboutpage= document.getElementById("aboutpage");
+      const feedbackpage= document.getElementById("feedbackpage");
+  const homebtn= document.getElementById("homebtn");
+   const aboutbtn= document.getElementById("aboutbtn");
+    const feedbackbtn= document.getElementById("feedbackbtn");
+      
+      homebtn.style.color="black";
+      aboutbtn.style.color="black";
+      feedbackbtn.style.color="white";
+      
+      homepage.style.display="none";
+      aboutpage.style.display="none";
+      feedbackpage.style.display="flex";
+    }
+    
+    
+  </script>
+  </body>
+</html>
